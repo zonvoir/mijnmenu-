@@ -1,0 +1,30 @@
+To run Application
+run command >> node server.js
+ 
+
+server.js uncomment 
+
+//app.use(express.static('./dist'));
+//var imageServer="http://112.196.24.205:3000/Images/"
+
+
+//app.get('*', function (req, res) {
+ //   res.sendfile('./dist/index.html')
+//})
+
+
+Change dbURI with Your dbURI in DB.js 
+
+var dbURI = 'mongodb://localhost:27017/MijnMenu';
+
+Change API_ENDPOINT with Your API_ENDPOINT in appSettings.ts.js 
+
+public static API_ENDPOINT = 'http://localhost:3000';
+ 
+Change imageServer in server.js 
+ var imageServer="http://112.196.24.205:3000/Images/"
+ 
+Run mongo db on server
+
+Programfiles>mongodb>server>version>mongod.conf : Change Ip
+Run > mongod --config mongod.conf

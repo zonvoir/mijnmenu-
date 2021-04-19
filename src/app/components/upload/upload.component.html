@@ -1,0 +1,15 @@
+<div class="upload-component">
+    <div class="row">
+        <div class="col-lg-12 s-margin-v">
+            <span style="color:red;" *ngIf="message">{{message}}</span>
+            <input #file multiple class="s-padding input" type="file" accept='image/*' (change)="preview(file.files)" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div *ngIf="urls.length">
+                <ngx-gallery [options]="galleryOptions" [images]="urls"></ngx-gallery>
+            </div>
+        </div>
+    </div>
+</div>
