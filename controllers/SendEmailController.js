@@ -9,8 +9,8 @@ var server = email.server.connect({
 var message = {
   text: "i hope this works",
   from: "test@gmail.com1",
-  to: "prernachouhan@krishnais.com",
-  cc: "prernachouhan@krishnais.com",
+  to: "",
+  cc: "",
   subject: "testing emailjs",
   attachment:
     [
