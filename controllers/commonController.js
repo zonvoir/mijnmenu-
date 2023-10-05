@@ -8,14 +8,14 @@ module.exports = function (app, urlencodedBodyparser, jsonParser, sendSuccessRes
     var bcrypt = require('bcryptjs');
     const ObjectId = mongoose.Types.ObjectId;
     mailer.extend(app, {
-        from: 'amriksingh.kis@gmail.com',
+        from: '',
         host: 'smtp.gmail.com', // hostname
         secureConnection: true, // use SSL
         port: 465, // port for secure SMTP
         transportMethod: 'SMTP', // default is SMTP. Accepts anything that nodemailer accepts
         auth: {
-            user: 'amriksingh.kis@gmail.com',
-            pass: 'krish.341@ak'
+            user: '',
+            pass: ''
         }
     });
 
